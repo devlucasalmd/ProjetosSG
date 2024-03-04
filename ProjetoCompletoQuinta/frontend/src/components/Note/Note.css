@@ -1,0 +1,15 @@
+.note-card{
+  width: 368px;
+  background-color: #ff02ff;
+  padding: 10px; margin: 10px;
+  border-radius: 16px;
+}
+.note-card:hover{
+ box-shadow: 3px 3px 1px 3px blue;
+}
+.noteslist{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content:center;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Painel de controle</title>
+</head>
+
+<body>
+    <header>
+        <span class="title">Bem vindo ao painel de controle de usuários</span>
+        <button id="toggle-add-row" onclick="toggleAddRow()">Adicionar um novo cadastro</button>
+    </header>
+    <div class="container-flex">
+        <div id="add-row">
+            <span class="space"></span>
+            <h3>Adicionar novo cadastro</h3>
+            <span class="tiny-space"></span>
+            <label for="name">Nome </label>
+            <input type="text" id="name" name="name">
+            <span class="tiny-space"></span>
+            <label for="email">Email </label>
+            <input type="email" id="email" name="email">
+            <span class="space"></span>
+            <button onclick="InserirDados()">Cadastrar</button>
+        </div>
+    </div>
+    <span class="space"></span>
+    <div class="container-flex">
+        <div>
+            <h3>Usuários cadastrados</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Operações</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./scripts/Globais.js"></script>
+    <script src="./scripts/InserirDados.js"></script>
+    <script src="./scripts/MostrarDados.js"></script>
+    <script src="./scripts/EditarDados.js"></script>
+    <script src="./scripts/DeletarDados.js"></script>
+    <script src="/scripts/structural.js"></script>
+</body>
+
+</html>
